@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,16 +12,16 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		9D93B72A3CCF952710A1789F /* libPods-RNDemo-RNDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1391CD09B54295AAFC9C0AB /* libPods-RNDemo-RNDemoTests.a */; };
-		B0080A267577D306F5FD232F /* libPods-RNDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5127A089390D3A04A511BC /* libPods-RNDemo.a */; };
+		2942E025BA30DAE9E4F326DA /* libPods-RNDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9434377980A7B3BBA74DE0 /* libPods-RNDemo.a */; };
+		44665D6F26F4E3630026F7B0 /* AmazonChimeSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44665D6E26F4E3630026F7B0 /* AmazonChimeSDK.xcframework */; };
+		44665D7026F4E3630026F7B0 /* AmazonChimeSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44665D6E26F4E3630026F7B0 /* AmazonChimeSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		44665D7326F4E3710026F7B0 /* AmazonChimeSDKMedia.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44665D7226F4E3710026F7B0 /* AmazonChimeSDKMedia.xcframework */; };
+		44665D7426F4E3710026F7B0 /* AmazonChimeSDKMedia.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44665D7226F4E3710026F7B0 /* AmazonChimeSDKMedia.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B475C84B2491805F00AE5FA2 /* MeetingObservers.m in Sources */ = {isa = PBXBuildFile; fileRef = B475C84A2491805F00AE5FA2 /* MeetingObservers.m */; };
 		B48B03A12433E4A3005E2128 /* RNVideoViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B48B039E2433E4A3005E2128 /* RNVideoViewManager.m */; };
-		B4D80A94242E3F6C0099AF3D /* AmazonChimeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D80A92242E3F6C0099AF3D /* AmazonChimeSDK.framework */; };
-		B4D80A95242E3F6C0099AF3D /* AmazonChimeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D80A92242E3F6C0099AF3D /* AmazonChimeSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B4D80A96242E3F6C0099AF3D /* AmazonChimeSDKMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D80A93242E3F6C0099AF3D /* AmazonChimeSDKMedia.framework */; };
-		B4D80A97242E3F6C0099AF3D /* AmazonChimeSDKMedia.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D80A93242E3F6C0099AF3D /* AmazonChimeSDKMedia.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4D80A9B242E3FC80099AF3D /* NativeMobileSDKBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D80A9A242E3FC80099AF3D /* NativeMobileSDKBridge.m */; };
 		B4D80AB9242E61160099AF3D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D80AB8242E61160099AF3D /* AVFoundation.framework */; };
+		DD4F498E422C374FF82ABFA8 /* libPods-RNDemo-RNDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1897061D683EA6B07543DD84 /* libPods-RNDemo-RNDemoTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,14 +35,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B4D80A98242E3F6C0099AF3D /* Embed Frameworks */ = {
+		44665D7126F4E3630026F7B0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B4D80A95242E3F6C0099AF3D /* AmazonChimeSDK.framework in Embed Frameworks */,
-				B4D80A97242E3F6C0099AF3D /* AmazonChimeSDKMedia.framework in Embed Frameworks */,
+				44665D7426F4E3710026F7B0 /* AmazonChimeSDKMedia.xcframework in Embed Frameworks */,
+				44665D7026F4E3630026F7B0 /* AmazonChimeSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,9 +61,13 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RNDemo/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNDemo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNDemo/main.m; sourceTree = "<group>"; };
-		31599D2E6EEF49EDA1D4B39C /* Pods-RNDemo-RNDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDemo-RNDemoTests.release.xcconfig"; path = "Target Support Files/Pods-RNDemo-RNDemoTests/Pods-RNDemo-RNDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		8D5127A089390D3A04A511BC /* libPods-RNDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC28CFBA3D6AF78D5C1F3124 /* Pods-RNDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDemo.release.xcconfig"; path = "Target Support Files/Pods-RNDemo/Pods-RNDemo.release.xcconfig"; sourceTree = "<group>"; };
+		1897061D683EA6B07543DD84 /* libPods-RNDemo-RNDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNDemo-RNDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C91422E7C84D5AB11B55373 /* Pods-RNDemo-RNDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDemo-RNDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-RNDemo-RNDemoTests/Pods-RNDemo-RNDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F48B72B50818EC4B3AE8638 /* Pods-RNDemo-RNDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDemo-RNDemoTests.release.xcconfig"; path = "Target Support Files/Pods-RNDemo-RNDemoTests/Pods-RNDemo-RNDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		44665D6E26F4E3630026F7B0 /* AmazonChimeSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AmazonChimeSDK.xcframework; path = RNDemo/AmazonChimeSDK.xcframework; sourceTree = "<group>"; };
+		44665D7226F4E3710026F7B0 /* AmazonChimeSDKMedia.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AmazonChimeSDKMedia.xcframework; path = RNDemo/AmazonChimeSDKMedia.xcframework; sourceTree = "<group>"; };
+		6AD9DDB75E2FB58D27B39C12 /* Pods-RNDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDemo.debug.xcconfig"; path = "Target Support Files/Pods-RNDemo/Pods-RNDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A14D88100AAE3886E305A68F /* Pods-RNDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDemo.release.xcconfig"; path = "Target Support Files/Pods-RNDemo/Pods-RNDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B475C8492491805F00AE5FA2 /* MeetingObservers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeetingObservers.h; path = RNDemo/MeetingObservers.h; sourceTree = "<group>"; };
 		B475C84A2491805F00AE5FA2 /* MeetingObservers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeetingObservers.m; path = RNDemo/MeetingObservers.m; sourceTree = "<group>"; };
 		B48B039E2433E4A3005E2128 /* RNVideoViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNVideoViewManager.m; path = RNDemo/RNVideoViewManager.m; sourceTree = "<group>"; };
@@ -73,11 +77,9 @@
 		B4D80A9A242E3FC80099AF3D /* NativeMobileSDKBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NativeMobileSDKBridge.m; path = RNDemo/NativeMobileSDKBridge.m; sourceTree = "<group>"; };
 		B4D80A9C242E3FEA0099AF3D /* NativeMobileSDKBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NativeMobileSDKBridge.h; path = RNDemo/NativeMobileSDKBridge.h; sourceTree = "<group>"; };
 		B4D80AB8242E61160099AF3D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		C95591044192B023BF5BB137 /* Pods-RNDemo-RNDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDemo-RNDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-RNDemo-RNDemoTests/Pods-RNDemo-RNDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA9434377980A7B3BBA74DE0 /* libPods-RNDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F1391CD09B54295AAFC9C0AB /* libPods-RNDemo-RNDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNDemo-RNDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC6F63B59EEBA93C1A84B753 /* Pods-RNDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDemo.debug.xcconfig"; path = "Target Support Files/Pods-RNDemo/Pods-RNDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D93B72A3CCF952710A1789F /* libPods-RNDemo-RNDemoTests.a in Frameworks */,
+				DD4F498E422C374FF82ABFA8 /* libPods-RNDemo-RNDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,10 +95,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44665D7326F4E3710026F7B0 /* AmazonChimeSDKMedia.xcframework in Frameworks */,
+				44665D6F26F4E3630026F7B0 /* AmazonChimeSDK.xcframework in Frameworks */,
 				B4D80AB9242E61160099AF3D /* AVFoundation.framework in Frameworks */,
-				B4D80A96242E3F6C0099AF3D /* AmazonChimeSDKMedia.framework in Frameworks */,
-				B4D80A94242E3F6C0099AF3D /* AmazonChimeSDK.framework in Frameworks */,
-				B0080A267577D306F5FD232F /* libPods-RNDemo.a in Frameworks */,
+				2942E025BA30DAE9E4F326DA /* libPods-RNDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,13 +140,15 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44665D7226F4E3710026F7B0 /* AmazonChimeSDKMedia.xcframework */,
+				44665D6E26F4E3630026F7B0 /* AmazonChimeSDK.xcframework */,
 				B4D80AB8242E61160099AF3D /* AVFoundation.framework */,
 				B4D80A92242E3F6C0099AF3D /* AmazonChimeSDK.framework */,
 				B4D80A93242E3F6C0099AF3D /* AmazonChimeSDKMedia.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				8D5127A089390D3A04A511BC /* libPods-RNDemo.a */,
-				F1391CD09B54295AAFC9C0AB /* libPods-RNDemo-RNDemoTests.a */,
+				EA9434377980A7B3BBA74DE0 /* libPods-RNDemo.a */,
+				1897061D683EA6B07543DD84 /* libPods-RNDemo-RNDemoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,10 +156,10 @@
 		3B7C2EF2E075F9E273CB70ED /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FC6F63B59EEBA93C1A84B753 /* Pods-RNDemo.debug.xcconfig */,
-				AC28CFBA3D6AF78D5C1F3124 /* Pods-RNDemo.release.xcconfig */,
-				C95591044192B023BF5BB137 /* Pods-RNDemo-RNDemoTests.debug.xcconfig */,
-				31599D2E6EEF49EDA1D4B39C /* Pods-RNDemo-RNDemoTests.release.xcconfig */,
+				6AD9DDB75E2FB58D27B39C12 /* Pods-RNDemo.debug.xcconfig */,
+				A14D88100AAE3886E305A68F /* Pods-RNDemo.release.xcconfig */,
+				1C91422E7C84D5AB11B55373 /* Pods-RNDemo-RNDemoTests.debug.xcconfig */,
+				1F48B72B50818EC4B3AE8638 /* Pods-RNDemo-RNDemoTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -211,7 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RNDemoTests" */;
 			buildPhases = (
-				B4A2BA536FB5E6B0C7A200A6 /* [CP] Check Pods Manifest.lock */,
+				C4B97256722F3FA07D1901BD /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -230,13 +234,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNDemo" */;
 			buildPhases = (
-				08F002DAFE389E58FB1D6B63 /* [CP] Check Pods Manifest.lock */,
+				01CA42D41588BBF6683E93D6 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				B4D80A98242E3F6C0099AF3D /* Embed Frameworks */,
+				44665D7126F4E3630026F7B0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -318,7 +322,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		08F002DAFE389E58FB1D6B63 /* [CP] Check Pods Manifest.lock */ = {
+		01CA42D41588BBF6683E93D6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,7 +344,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B4A2BA536FB5E6B0C7A200A6 /* [CP] Check Pods Manifest.lock */ = {
+		C4B97256722F3FA07D1901BD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -429,7 +433,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C95591044192B023BF5BB137 /* Pods-RNDemo-RNDemoTests.debug.xcconfig */;
+			baseConfigurationReference = 1C91422E7C84D5AB11B55373 /* Pods-RNDemo-RNDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -438,7 +442,11 @@
 				);
 				INFOPLIST_FILE = RNDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -452,13 +460,17 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31599D2E6EEF49EDA1D4B39C /* Pods-RNDemo-RNDemoTests.release.xcconfig */;
+			baseConfigurationReference = 1F48B72B50818EC4B3AE8638 /* Pods-RNDemo-RNDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = RNDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -472,13 +484,14 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC6F63B59EEBA93C1A84B753 /* Pods-RNDemo.debug.xcconfig */;
+			baseConfigurationReference = 6AD9DDB75E2FB58D27B39C12 /* Pods-RNDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 94KV3E626L;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64,arm64e, armv7";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RNDemo",
@@ -488,7 +501,10 @@
 					"FB_SONARKIT_ENABLED=1",
 				);
 				INFOPLIST_FILE = RNDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -498,13 +514,14 @@
 				PRODUCT_NAME = RNDemo;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				VALIDATE_WORKSPACE = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC28CFBA3D6AF78D5C1F3124 /* Pods-RNDemo.release.xcconfig */;
+			baseConfigurationReference = A14D88100AAE3886E305A68F /* Pods-RNDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -516,7 +533,10 @@
 					"$(PROJECT_DIR)/RNDemo",
 				);
 				INFOPLIST_FILE = RNDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -577,7 +597,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
@@ -630,7 +653,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
